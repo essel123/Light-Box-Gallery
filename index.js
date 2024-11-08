@@ -17,6 +17,7 @@ async function fetchJSON() {
     console.error("There was a problem with the fetch operation:", error);
   }
 }
+
 // Function to display images
 function displayImages(images) {
   const gallery = document.getElementById("gallery");
@@ -44,7 +45,7 @@ function displayImages(images) {
       //   }
     });
 
-    currentIndex = index
+    currentIndex = index;
 
     gallery.appendChild(card);
   });
@@ -63,7 +64,7 @@ function openLightbox(index) {
 // Function to close the lightbox
 document.getElementById("close-btn").addEventListener("click", () => {
   document.getElementById("lightbox").style.display = "none";
-  currentIndex = 0
+  currentIndex = 0;
 });
 
 // Event listiners to handle next and prev buttons
