@@ -1,0 +1,43 @@
+[
+    {
+        "imageURL": "images/1.jpg",
+        "thumbnailURL": "images/1.jpg",
+        "caption": "A beautiful sunrise over the mountains."
+    },
+    {
+        "imageURL": "images/2.jpg",
+        "thumbnailURL": "images/2.jpg",
+        "caption": "A serene beach with golden sands."
+    },
+    {
+        "imageURL": "images/3.jpg",
+        "thumbnailURL": "images/3.jpg",
+        "caption": "An enchanting forest path in autumn."
+    },
+    {
+        "imageURL": "images/4.jpg",
+        "thumbnailURL": "images/4.jpg",
+        "caption": "A bustling city skyline at night."
+    },
+    {
+        "imageURL": "images/5.jpg",
+        "thumbnailURL": "images/5.jpg",
+        "caption": "A tranquil lake reflecting the sky."
+    },
+    {
+        "imageURL": "images/6.jpg",
+        "thumbnailURL": "images/6.jpg",
+        "caption": "A colorful field of wildflowers."
+    },
+    {
+        "imageURL": "images/7.jpg",
+        "thumbnailURL": "images/7.jpg",
+        "caption": "A snowy mountain peak under a clear sky."
+    },
+    {
+        "imageURL": "images/8.jpg",
+        "thumbnailURL": "images/8.jpg",
+        "caption": "A historic castle surrounded by greenery."
+    }
+    
+]
