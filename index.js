@@ -3,7 +3,10 @@ let currentIndex = 0;
 let imagesData = [];
 
 let next = imagesData.length;
+
 let prev = 0;
+
+
 // Function to fetch JSON data
 async function fetchJSON() {
   try {
@@ -38,6 +41,8 @@ function displayImages(images) {
   });
 }
 
+
+
 // Function to open the lightbox
 function openLightbox(index) {
   const lightbox = document.getElementById("lightbox");
@@ -55,6 +60,7 @@ document.getElementById("close-btn").addEventListener("click", () => {
   document.getElementById("lightbox").style.display = "none";
  
 });
+
 
 // Event listiners to handle next and prev buttons
 function nextprev() {
@@ -113,29 +119,6 @@ function updateLightbox() {
 }
 
 
-
-
-// localStorage.setItem("index",currentIndex);
-//  let local =  localStorage.getItem("index")
-
-//   if(local === "1")
-//   {
-//     document.getElementById("prev-btn").display = "none"
-
-//   }
-
-
-// function controlnav(nav){
-//   localStorage.setItem("index",nav);
-//     //  if(local === "1")
-//     //    {
-//     //     document.getElementById("prev-btn").display = "none"
-    
-//     //  }
-  
-// }
-
-
 nextprev();
 
 fetchJSON();
@@ -148,3 +131,5 @@ document.addEventListener('keydown',event =>{
   }
 })
 })()
+
+
