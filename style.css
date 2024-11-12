@@ -152,7 +152,7 @@ main{
 }
 
 button{
-    color: black;
+    color: black !important;
 }
 
 .close-btn img {
