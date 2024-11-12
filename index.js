@@ -2,11 +2,6 @@ let currentIndex = 0;
 
 let imagesData = [];
 
-let next = imagesData.length;
-
-let prev = 0;
-
-
 // Function to fetch JSON data
 async function fetchJSON() {
   try {
@@ -34,14 +29,9 @@ function displayImages(images) {
     card.addEventListener("click", () => {
       openLightbox(index);
     });
-
-    // currentIndex = index;
-
     gallery.appendChild(card);
   });
 }
-
-
 
 // Function to open the lightbox
 function openLightbox(index) {
@@ -51,38 +41,30 @@ function openLightbox(index) {
   lightboxImage.src = imagesData[index].imageURL;
   lightboxCaption.textContent = imagesData[index].caption;
   lightbox.style.display = "flex";
-
-  
 }
 
 // Function to close the lightbox
 document.getElementById("close-btn").addEventListener("click", () => {
   document.getElementById("lightbox").style.display = "none";
- 
 });
-
 
 // Event listiners to handle next and prev buttons
 function nextprev() {
-
-    document.getElementById("prev-btn").addEventListener("click", () => {
-    
+  document.getElementById("prev-btn").addEventListener("click", () => {
     currentIndex = (currentIndex - 1 + imagesData.length) % imagesData.length;
-   
+
     updateLightbox();
     updateButtonStates();
   });
 
   document.getElementById("next-btn").addEventListener("click", () => {
-    currentIndex =
-    (currentIndex + 1) % imagesData.length;
+    currentIndex = (currentIndex + 1) % imagesData.length;
 
     updateLightbox();
     updateButtonStates();
     document.getElementById("prev-btn").style.display = "flex";
   });
 }
-
 
 // Function to update button states
 function updateButtonStates() {
@@ -91,24 +73,24 @@ function updateButtonStates() {
 
   // Disable previous button if at the first image
   if (currentIndex === 0) {
-      prevButton.disabled = true; 
-      prevButton.style.display = "none"; 
+    prevButton.disabled = true;
+    prevButton.style.display = "none";
   } else {
-      prevButton.disabled = false; 
-      prevButton.style.display = "flex"; 
+    prevButton.disabled = false;
+    prevButton.style.display = "flex";
   }
 
   // Disable next button if at the last image
   if (currentIndex === imagesData.length - 1) {
-      nextButton.disabled = true; 
-      nextButton.style.display = "none"; 
+    nextButton.disabled = true;
+    nextButton.style.display = "none";
   } else {
-      nextButton.disabled = false; 
-      nextButton.style.display = "flex"; 
+    nextButton.disabled = false;
+    nextButton.style.display = "flex";
   }
 }
 
-updateButtonStates()
+updateButtonStates();
 
 // Function to update lightbox content
 function updateLightbox() {
@@ -118,21 +100,14 @@ function updateLightbox() {
   lightboxCaption.textContent = imagesData[currentIndex].caption;
 }
 
-
 nextprev();
 
 fetchJSON();
 
-(function(){
-  
-document.addEventListener('keydown',event =>{
-  if(event.key === "Escape"){
-    document.getElementById("lightbox").style.display = "none"
-  }
-})
-})()
-
-
-
-
-
+(function() {
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape") {
+      document.getElementById("lightbox").style.display = "none";
+    }
+  });
+})();
