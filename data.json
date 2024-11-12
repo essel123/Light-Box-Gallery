@@ -38,6 +38,35 @@
         "imageURL": "images/8.jpg",
         "thumbnailURL": "images/8.jpg",
         "caption": "A historic castle surrounded by greenery."
+    },
+    {
+        "imageURL": "images/9.jpg",
+        "thumbnailURL": "images/9.jpg",
+        "caption": "A snowy mountain peak under a clear sky."
+    },
+    {
+        "imageURL": "images/10.jpg",
+        "thumbnailURL": "images/10.jpg",
+        "caption": "A historic castle surrounded by greenery."
+    },
+    {
+        "imageURL": "images/11.jpg",
+        "thumbnailURL": "images/11.jpg",
+        "caption": "A snowy mountain peak under a clear sky."
+    },
+    {
+        "imageURL": "images/12.jpg",
+        "thumbnailURL": "images/12.jpg",
+        "caption": "A historic castle surrounded by greenery."
+    },{
+        "imageURL": "images/13.jpg",
+        "thumbnailURL": "images/13.jpg",
+        "caption": "A snowy mountain peak under a clear sky."
+    },
+    {
+        "imageURL": "images/14.jpg",
+        "thumbnailURL": "images/14.jpg",
+        "caption": "A historic castle surrounded by greenery."
     }
     
 ]

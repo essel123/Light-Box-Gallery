@@ -151,6 +151,10 @@ main{
     cursor: pointer;
 }
 
+button{
+    color: black;
+}
+
 .close-btn img {
     width: 25px;
     height: 25px;
@@ -165,7 +169,7 @@ main{
     border-radius: 50%;
     padding: 10px;
     cursor: pointer;
-    transition: 0.5s ease-in;
+    transition: 0.3s ease-in;
 }
 
 .prev-btn {
